@@ -437,16 +437,29 @@ div foreignObject{margin-top: 200px;}
     color: #ffffff;
 }
 @media (max-width: 767px) {
+    .project_link{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .grid__container p{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 10px;
+    }
     .container-1000 .grid__container > div {
-        height: 275px; /* Adjust height for smaller screens */
+        height: 220px; /* Adjust height for smaller screens */
     width: 220px;
     }
     .container-1000 .grid__container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 40px;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        gap: var(--size-3);
+        grid-auto-flow: column;
+        grid-auto-columns: 21%;
+        grid-gap: 5px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        overscroll-behavior-inline: contain ;
       }
      
     
