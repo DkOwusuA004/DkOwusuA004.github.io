@@ -328,7 +328,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 div foreignObject{margin-top: 200px;}
 
 @media (max-width: 767px) {
-    .event-group {
+    .event-group, line {
         flex-direction: column; /* Change to a vertical layout on smaller screens */
         align-items: center; /* Center the events */
     }
@@ -435,4 +435,19 @@ div foreignObject{margin-top: 200px;}
 .project_link{
     text-decoration: none;
     color: #ffffff;
+}
+@media (max-width: 767px) {
+    .container-1000 .grid__container > div {
+        height: 275px; /* Adjust height for smaller screens */
+    width: 220px;
+    }
+    .container-1000 .grid__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+     
+    
 }
