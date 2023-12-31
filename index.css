@@ -2,12 +2,24 @@
     padding: 0;
 box-sizing: border-box;}
 
+
+
 body{background-color: aliceblue;
-display: flex;
+display: grid;
 align-items: center;
 flex-direction:column;
 min-height:100vh;
+width: 100%;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+/*continue to sort this out*/
+@media screen and (max-width:767px){
+    body{
+     min-height: 100vh;
+     max-width: 767px;
+    }
+}
+/*continue to sort this out*/
 
 html{
     scroll-behavior: smooth;
@@ -277,79 +289,122 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     }
 }
 /*TIMELINE*/
-.timeline_svg {
-    margin-bottom: 20px;
- }
- 
- .timeline_circle {
+.timeline{
+    display: flex;
+    border: blue solid;
+}
+.solid_line{
+    border-top: #000 solid 2px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-left: 230px;
+    width: 230px;
+}
+
+.dashed_line{
+    border-top: #000 dashed 2px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 655px;
+}
+
+/*circle1*/
+.circle_1{
+    background-color: #333;
     cursor: pointer;
     transition: fill 0.3s ease;
- }
- 
- .timeline_circle:hover {
-    fill: #555; /* Change the color on hover */
- }
- 
- title {
-    font-size: 12px;
- }
- .timeline_label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 71px;
+    margin-left: -840px;
+}
+.circle_1:hover{
+    background-color: #555;
+}
+.job_title1{
     background-color: #fff;
-    padding: 10px;
-    border: 1px solid #333;
+    width: 150px;
+    height: 60px;
+    border: #000 solid 2px;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -195px;
     text-align: center;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
-
-.company{
+.workplace_1{
+    margin-top: 95px;
+    margin-left: -272px;
     display: inline-block;
     width: 180px;
     opacity: 0;
     font-size: 12px;
     text-align: center;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
-
-.timeline_circle:hover + .timeline_label{
+.circle_1:hover ~ .job_title1{
     opacity: 1;
     pointer-events: auto;
 }
-
-.timeline_circle:hover ~ .company_label .company{
+.circle_1:hover ~ .workplace_1{
     opacity: 1;
     pointer-events: auto;
 }
-
-.timeline_circle:hover {
-    fill: #555;
+/*circle2*/
+.circle_2{
+    background-color: #333;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 71px;
+    margin-left: 90px;
 }
-div foreignObject{margin-top: 200px;}
-
-@media (max-width: 767px) {
-    .event-group, line {
-        flex-direction: column; /* Change to a vertical layout on smaller screens */
-        align-items: center; /* Center the events */
-    }
-
-    .timeline_circle:hover + .timeline_label,
-    .timeline_circle:hover ~ .company_label .company {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .company_label {
-        margin-top: 10px; /* Adjust margin for better spacing on mobile */
-    }
+.circle_2:hover{
+    background-color: #555;
 }
-
+.job_title2{
+    background-color: #fff;
+    width: 150px;
+    height: 60px;
+    border: #000 solid 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -40px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.workplace_2{
+    margin-top: 95px;
+    margin-left: -70px;
+    display: inline-block;
+    width: 180px;
+    opacity: 0;
+    font-size: 12px;
+    text-align: center;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.circle_2:hover ~ .job_title2{
+    opacity: 1;
+    pointer-events: auto;
+}
+.circle_2:hover ~ .workplace_2{
+    opacity: 1;
+    pointer-events: auto;
+}
 /*Projects*/
 .h1_projects{
     margin-top: 30px;
     margin-bottom: -90px;
+    text-decoration: none;
 }
 .container-1000 {
   width: 100%;
