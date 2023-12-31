@@ -36,6 +36,7 @@ header{
     font-size: 15px;
     background-color: #333;
 display: flex;
+top: 0;
 align-items: center;
 justify-content: space-between;
 padding: 15px 20px;
@@ -305,7 +306,6 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 /*TIMELINE*/
 .timeline{
     display: flex;
-    border: blue solid;
 }
 .solid_line{
     border-top: #000 solid 2px;
@@ -563,3 +563,17 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
         scroll-snap-align: center;
     }
 }
+
+/*contacts*/
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+  }
+  
+  .google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
