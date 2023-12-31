@@ -452,6 +452,10 @@ div foreignObject{margin-top: 200px;}
         font-size: 10px;
     }
 
+    .grid__container{
+        height: 260px;
+    }
+
     .container-1000 {
         width: 100%;
         max-width: 600px;
@@ -459,11 +463,12 @@ div foreignObject{margin-top: 200px;}
     .container-1000 .grid__container > div {
         height: 220px; /* Adjust height for smaller screens */
     width: 220px;
-    border: solid 1px transparent;
+    border: 2px solid linear-gradient(66deg, #000 0%, #333 100%);
     }
    
     .container-1000 .grid__container {
         display: grid;
+        position: static;
         gap: var(--size-3);
         grid-auto-flow: column;
         grid-auto-columns: 21%;
