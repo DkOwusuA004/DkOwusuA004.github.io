@@ -67,15 +67,6 @@ nav ul li a{
     text-decoration: none;
 }
 
-.Home:hover, .navbar:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-.navbar a:hover, .Home a:hover{
-    color: #333;
-}
-
 @media screen and (max-width:767px){
     label{
         display: block;
@@ -434,9 +425,13 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 }
 .container-1000 .grid__container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  /*Change repeat number to amount of boxes in grid*/
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
+}
+@media (max-width: 767px) {
+    .container-1000 .grid__container{
+        grid-template-columns: repeat(6, 1fr);
+    /*Change repeat number to amount of boxes in grid*/}
 }
 .container-1000 .grid__container > div {
   height: 250px;
