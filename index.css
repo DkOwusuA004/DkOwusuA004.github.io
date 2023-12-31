@@ -21,7 +21,7 @@ html{
 }
 header{
     width: 100%;
-    font-size: 25px;
+    font-size: 15px;
     background-color: #333;
 display: flex;
 align-items: center;
@@ -248,6 +248,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     margin-right: 30px;/* Add spacing between image and text */
     transition: all 0.5s ease;
     filter: grayscale(100%);
+    padding-bottom: 10px;
 }
 
 .Self:hover{
@@ -268,6 +269,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     .About_Me_div {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
     }
 
     .Self_text {
@@ -355,6 +357,7 @@ div foreignObject{margin-top: 200px;}
   min-height: 100vh;
   padding: 0px 20px;
   margin: 0 auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -366,14 +369,14 @@ div foreignObject{margin-top: 200px;}
   grid-gap: 40px;
 }
 .container-1000 .grid__container > div {
-  height: 300px;
+  height: 250px;
   color: #ffffff;
   display: flex;
   padding: 25px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  border: 2px solid transparent;
+  border: 2px solid linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div > div:nth-child(1) {
   align-self: flex-end;
@@ -383,34 +386,35 @@ div foreignObject{margin-top: 200px;}
 }
 .container-1000 .grid__container > div h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 25px 0;
   line-height: 1.15;
 }
 .container-1000 .grid__container > div:nth-child(1) {
   background: #333;
-  background: linear-gradient(66deg, #333 0%, #333 100%);
+  background: linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div:nth-child(2) {
     background: #333;
-    background: linear-gradient(66deg, #333 0%, #333 100%);
+    background: linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div:nth-child(3) {
     background: #333;
-    background: linear-gradient(66deg, #333 0%, #333 100%);
+    background: linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div:nth-child(4) {
     background: #333;
-    background: linear-gradient(66deg, #333 0%, #333 100%);
+    background: linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div:nth-child(5) {
     background: #333;
-    background: linear-gradient(66deg, #333 0%, #333 100%);
+    background: linear-gradient(66deg, #000 0%, #333 100%);
 }
 .container-1000 .grid__container > div:nth-child(6) {
     background: #333;
-    background: linear-gradient(66deg, #333 0%, #333 100%);
+    background: linear-gradient(66deg, #000 0%, #333 100%);
 }
+/*if you add another project add another one of the above to change the colour gradient*/
 .container-1000 .grid__container > div:hover {
   background: #000000;
   color: #eeeeff;
@@ -447,20 +451,41 @@ div foreignObject{margin-top: 200px;}
         color: #ffffff;
         font-size: 10px;
     }
+
+    .container-1000 {
+        width: 100%;
+        max-width: 600px;
+    }
     .container-1000 .grid__container > div {
         height: 220px; /* Adjust height for smaller screens */
     width: 220px;
+    border: solid 1px transparent;
     }
+   
     .container-1000 .grid__container {
         display: grid;
         gap: var(--size-3);
         grid-auto-flow: column;
         grid-auto-columns: 21%;
-        grid-gap: 5px;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        gap: 5px;
+        overflow-x: auto;
         overscroll-behavior-inline: contain ;
       }
-     
-    
+      .container-1000 .grid__container > div:hover::after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: -15px;
+        height: 100%;
+        width: 100%;
+        border: none;
+
+      }
+    .snap-inline {
+        scroll-snap-type: inline mandatory;
+    }
+
+    .snap-inline > * {
+        scroll-snap-align: center;
+    }
 }
