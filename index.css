@@ -434,7 +434,8 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 }
 .container-1000 .grid__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  /*Change repeat number to amount of boxes in grid*/
   grid-gap: 40px;
 }
 .container-1000 .grid__container > div {
