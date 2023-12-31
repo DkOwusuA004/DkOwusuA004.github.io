@@ -66,7 +66,9 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
 }
-
+.navbar{
+    border: red ;
+}
 @media screen and (max-width:767px){
     label{
         display: block;
@@ -346,7 +348,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     display: inline-block;
     width: 180px;
     opacity: 0;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -392,7 +394,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     display: inline-block;
     width: 180px;
     opacity: 0;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -408,7 +410,6 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 /*Projects*/
 .h1_projects{
     margin-top: 30px;
-    margin-bottom: -90px;
     text-decoration: none;
 }
 .container-1000 {
@@ -429,6 +430,11 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
   grid-gap: 40px;
 }
 @media (max-width: 767px) {
+    .h1_projects{
+        margin-top: 30px;
+        margin-bottom: -150px;
+        text-decoration: none;
+    }
     .container-1000 .grid__container{
         grid-template-columns: repeat(6, 1fr);
     /*Change repeat number to amount of boxes in grid*/}
@@ -561,15 +567,18 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 }
 
 /*contacts*/
+
 .google-map {
-    padding-bottom: 50%;
+    padding-bottom: 30%;
     position: relative;
   }
   
   .google-map iframe {
+    max-height: 300px;
     height: 100%;
     width: 100%;
     left: 0;
-    top: 0;
     position: absolute;
+    display: flex;
+    bottom: 0;
   }
