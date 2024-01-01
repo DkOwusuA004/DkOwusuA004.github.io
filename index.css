@@ -13,10 +13,16 @@ width: 100%;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 /*continue to sort this out*/
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     body{
      min-height: 100vh;
-     max-width: 767px;
+     max-width: 768px;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+     min-height: 100vh;
+     max-width: 768px;
     }
 }
 /*continue to sort this out*/
@@ -111,7 +117,7 @@ nav ul li a{
     text-decoration: none;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     label{
         display: block;
     }
@@ -130,6 +136,43 @@ nav ul li a{
         transition: 0.3s ease;
     }
 
+    nav ul li a, nav label{
+        color: #fff;
+    }
+
+    nav label{
+        text-align: right;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    
+    input:checked ~ nav{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:480px){
+    label{
+        display: block;
+    }
+    .navbar1 a, .navbar2 a, .navbar3 a, .navbar4 a, .navbar5 a{
+        position: static;
+    }
+    nav{
+        width: 150px;
+        position: absolute;
+        background: #333;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+    
     nav ul li a, nav label{
         color: #fff;
     }
@@ -183,7 +226,7 @@ background-color: #333;}
         padding: bottom 600px;
         }
 
-        @media screen and (max-width:767px){
+        @media screen and (max-width:768px){
             .hr1{
                 display: flex;
                 border: none;
@@ -200,8 +243,11 @@ background-color: #333;}
             margin-right: 800px;
             margin-top: 20px;
             background-color: #333;
-        }        
-            
+        }          
+        }
+
+        @media screen and (max-width:480px){
+
         }
 /*social media links*/
 .Socials{display: flex;
@@ -350,7 +396,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     color: #000000;
     font-weight: 700;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .About_Me_div {
         flex-direction: column;
         align-items: center;
@@ -361,9 +407,19 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
         margin-top: 20px; /* Add spacing between image and text on mobile */
     }
 }
+@media screen and (max-width:330px){
+    .About_Me_div {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        max-width: 450px;
+    }
+}
 /*TIMELINE*/
 .timeline{
     display: flex;
+    position: static;
+    top: 0px;
 }
 .solid_line{
     border-top: #000 solid 2px;
@@ -497,7 +553,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .h1_projects{
         margin-top: 30px;
         margin-bottom: -150px;
@@ -506,6 +562,9 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     .container-1000 .grid__container{
         grid-template-columns: repeat(6, 1fr);
     /*Change repeat number to amount of boxes in grid*/}
+}
+@media screen and (max-width:480px){
+
 }
 .container-1000 .grid__container > div {
   height: 250px;
@@ -579,7 +638,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     text-decoration: none;
     color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .project_link{
         text-decoration: none;
         color: #ffffff;
@@ -633,7 +692,9 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
         scroll-snap-align: center;
     }
 }
+@media screen and (max-width:480px){
 
+}
 /*contacts*/
 
 .google-map {
