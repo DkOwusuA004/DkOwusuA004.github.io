@@ -248,6 +248,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 .h1_projects{
     text-align: center;
     text-decoration: underline 1px;
+    margin-bottom: -150px;
 }
  /*Relates to all headings except projects*/
  .h1 {
