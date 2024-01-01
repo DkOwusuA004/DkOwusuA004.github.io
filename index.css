@@ -183,6 +183,26 @@ background-color: #333;}
         padding: bottom 600px;
         }
 
+        @media screen and (max-width:767px){
+            .hr1{
+                display: flex;
+                border: none;
+                height: 1px;
+                width: 500px;
+            background-color: #333;}
+
+            .divhr2{
+                display: flex;
+                border: none;
+                height: 1px;
+                width: 300px;
+                margin-left:800px;
+            margin-right: 800px;
+            margin-top: 20px;
+            background-color: #333;
+        }        
+            
+        }
 /*social media links*/
 .Socials{display: flex;
 justify-content: center;
@@ -453,6 +473,8 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     opacity: 1;
     pointer-events: auto;
 }
+
+
 /*Projects*/
 .h1_projects{
     margin-top: 60px;
