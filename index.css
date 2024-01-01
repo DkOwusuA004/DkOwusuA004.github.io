@@ -116,9 +116,9 @@ nav ul li a{
     display: flex;
     border: none;
     height: 1px;
-    margin-left:450px;
-margin-right: 450px;
-background-color: black;}
+    margin-left:700px;
+margin-right: 700px;
+background-color: #333;}
 
 .divhr1{   
     display: float;
@@ -129,10 +129,10 @@ background-color: black;}
         display: flex;
         border: none;
         height: 1px;
-        margin-left:600px;
-    margin-right: 600px;
+        margin-left:800px;
+    margin-right: 800px;
     margin-top: 15px;
-    background-color: black;}
+    background-color: #333;}
     
 .divhr2{   
         display: float;
@@ -304,7 +304,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
     border-top: #000 solid 2px;
     margin-top: 80px;
     margin-bottom: 60px;
-    margin-left: 230px;
+    margin-left: 500px;
     width: 230px;
 }
 
