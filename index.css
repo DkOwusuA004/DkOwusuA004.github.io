@@ -503,6 +503,7 @@ transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);}
 .h1_projects{
     margin-top: 60px;
     text-decoration: none;
+   padding-bottom: 150px;
 }
 .container-1000 {
   width: 100%;
